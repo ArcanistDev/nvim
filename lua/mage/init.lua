@@ -6,8 +6,12 @@ local augroup = vim.api.nvim_create_augroup
 local mageGroup = augroup('mage', {})
 local autocmd = vim.api.nvim_create_autocmd
 
--- set a color column at 80
+-- set a color column at 120
 vim.opt.colorcolumn = '120'
+
+-- Set for Molten
+vim.g.python3_host_prog = vim.fn.expand("~/.virtualenvs/neovim/bin/python3")
+
 
 autocmd('LspAttach', {
   group = mageGroup,
