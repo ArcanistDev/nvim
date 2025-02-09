@@ -6,8 +6,8 @@ return {
     require("colorizer").setup()
     require("colorizer").setup {
       '*',
-      conf = { RRGGBBAA = true, },
-      css = { rgb_fn = true, },
+      conf = { RRGGBBAA = true, rgb_fn = true, hsl_fn = true },
+      css = { css = true, },
       html = { names = false, },
     }
   end,
