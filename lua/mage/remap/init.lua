@@ -36,3 +36,23 @@ vim.keymap.set("n", "<leader>moh", ":MoltenHideOutput<CR>",
 -- Show/enter output
 vim.keymap.set("n", "<leader>mos", ":noautocmd MoltenEnterOutput<CR>",
   { silent = true, desc = "show/enter output" })
+
+-- Debugger Stuff
+-- Toggle visibility
+vim.keymap.set("n", "<leader>duit", ":lua require('dapui').toggle()<CR>",
+  { silent = true, desc = "Toggle Debugger visibility." })
+
+vim.keymap.set("n", "<leader>dbp", ":lua require('dap').toggle_breakpoint()<CR>",
+  { silent = true, desc = "Toggle Breakpoint" })
+
+
+vim.keymap.set("n", "<leader>dbc", ":lua require('dap').continue()<CR>",
+  { silent = true, desc = "Debugger continue" })
+
+
+vim.keymap.set("n", "<leader>dso", ":lua require('dap').step_over()<CR>",
+  { silent = true, desc = "Debugger step-over." })
+
+
+vim.keymap.set("n", "<leader>dsi", ":lua require('dap').step_into()<CR>",
+  { silent = true, desc = "Debugger step-into." })
