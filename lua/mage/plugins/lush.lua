@@ -1,7 +1,7 @@
 return {
   "rktjmp/lush.nvim",
   {
-    dir = '/home/arcanist/.lush_themes/Wizard',
+    dir = '~/.lush_themes/Wizard',
     lazy = true
   }
 }
